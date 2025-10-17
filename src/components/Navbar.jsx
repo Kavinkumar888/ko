@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/KO_kappi Logo.png' // Adjust the path based on your file structure
+import logo from '../assets/KO_kappi_Logo.png' // Adjust the path based on your file structure
 
 const Navbar = ({ setCurrentPage, currentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
