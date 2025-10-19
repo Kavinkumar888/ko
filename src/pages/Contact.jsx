@@ -21,32 +21,32 @@ const Contact = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-orange-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-green-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Contact <span className="text-orange-500">Us</span>
+            Contact <span className="text-green-500">Us</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Have questions or feedback? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
-          <div className="w-20 h-1 bg-orange-500 mx-auto rounded-full mt-6"></div>
+          <div className="w-20 h-1 bg-green-500 mx-auto rounded-full mt-6"></div>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="bg-white rounded-3xl shadow-2xl p-8 border border-orange-100">
+            <div className="bg-white rounded-3xl shadow-2xl p-8 border border-green-100">
               <h2 className="text-3xl font-bold text-gray-800 mb-8 flex items-center">
-                <i className="fas fa-comments text-orange-500 mr-3"></i>
+                <i className="fas fa-comments text-green-500 mr-3"></i>
                 Get in Touch
               </h2>
               
               <div className="space-y-6">
                 {/* Address */}
-                <div className="flex items-start space-x-4 p-4 bg-orange-50 rounded-2xl hover:bg-orange-100 transition-colors duration-300">
-                  <div className="bg-orange-500 text-white p-3 rounded-full">
+                <div className="flex items-start space-x-4 p-4 bg-green-50 rounded-2xl hover:bg-green-100 transition-colors duration-300">
+                  <div className="bg-green-500 text-white p-3 rounded-full">
                     <i className="fas fa-map-marker-alt text-lg"></i>
                   </div>
                   <div>
@@ -56,8 +56,8 @@ const Contact = () => {
                 </div>
                 
                 {/* Phone */}
-                <div className="flex items-start space-x-4 p-4 bg-orange-50 rounded-2xl hover:bg-orange-100 transition-colors duration-300">
-                  <div className="bg-green-500 text-white p-3 rounded-full">
+                <div className="flex items-start space-x-4 p-4 bg-green-50 rounded-2xl hover:bg-green-100 transition-colors duration-300">
+                  <div className="bg-emerald-500 text-white p-3 rounded-full">
                     <i className="fas fa-phone text-lg"></i>
                   </div>
                   <div>
@@ -68,7 +68,7 @@ const Contact = () => {
                 </div>
                 
                 {/* Email */}
-                <div className="flex items-start space-x-4 p-4 bg-orange-50 rounded-2xl hover:bg-orange-100 transition-colors duration-300">
+                <div className="flex items-start space-x-4 p-4 bg-green-50 rounded-2xl hover:bg-green-100 transition-colors duration-300">
                   <div className="bg-blue-500 text-white p-3 rounded-full">
                     <i className="fas fa-envelope text-lg"></i>
                   </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                 </div>
                 
                 {/* Opening Hours */}
-                <div className="flex items-start space-x-4 p-4 bg-orange-50 rounded-2xl hover:bg-orange-100 transition-colors duration-300">
+                <div className="flex items-start space-x-4 p-4 bg-green-50 rounded-2xl hover:bg-green-100 transition-colors duration-300">
                   <div className="bg-purple-500 text-white p-3 rounded-full">
                     <i className="fas fa-clock text-lg"></i>
                   </div>
@@ -95,16 +95,16 @@ const Contact = () => {
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h3 className="font-semibold text-gray-800 mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="bg-gray-800 hover:bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110">
+                  <a href="#" className="bg-gray-800 hover:bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#" className="bg-gray-800 hover:bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110">
+                  <a href="#" className="bg-gray-800 hover:bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110">
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a href="#" className="bg-gray-800 hover:bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110">
+                  <a href="#" className="bg-gray-800 hover:bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110">
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a href="#" className="bg-gray-800 hover:bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110">
+                  <a href="#" className="bg-gray-800 hover:bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110">
                     <i className="fab fa-whatsapp"></i>
                   </a>
                 </div>
@@ -113,9 +113,9 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-3xl shadow-2xl p-8 border border-orange-100">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 border border-green-100">
             <h2 className="text-3xl font-bold text-gray-800 mb-8 flex items-center">
-              <i className="fas fa-paper-plane text-orange-500 mr-3"></i>
+              <i className="fas fa-paper-plane text-green-500 mr-3"></i>
               Send us a Message
             </h2>
             
@@ -133,7 +133,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 hover:bg-white"
+                    className="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 hover:bg-white"
                   />
                   <i className="fas fa-user absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
                 </div>
@@ -152,7 +152,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 hover:bg-white"
+                    className="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 hover:bg-white"
                   />
                   <i className="fas fa-envelope absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
                 </div>
@@ -171,7 +171,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 bg-gray-50 hover:bg-white resize-none"
+                    className="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-gray-50 hover:bg-white resize-none"
                   ></textarea>
                   <i className="fas fa-comment absolute right-4 top-4 text-gray-400"></i>
                 </div>
@@ -180,19 +180,19 @@ const Contact = () => {
               {/* Submit Button */}
               <button 
                 type="submit" 
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 text-lg"
+                className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3 text-lg"
               >
                 <i className="fas fa-paper-plane"></i>
                 <span>Send Message</span>
               </button>
 
               {/* Quick Response Info */}
-              <div className="bg-green-50 border border-green-200 rounded-2xl p-4 mt-6">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 mt-6">
                 <div className="flex items-center space-x-3">
-                  <i className="fas fa-bolt text-green-500 text-xl"></i>
+                  <i className="fas fa-bolt text-emerald-500 text-xl"></i>
                   <div>
-                    <p className="text-green-800 font-medium">Quick Response Guaranteed</p>
-                    <p className="text-green-600 text-sm">We typically reply within 2 hours</p>
+                    <p className="text-emerald-800 font-medium">Quick Response Guaranteed</p>
+                    <p className="text-emerald-600 text-sm">We typically reply within 2 hours</p>
                   </div>
                 </div>
               </div>
@@ -201,7 +201,7 @@ const Contact = () => {
         </div>
 
         {/* Map Section (Optional) */}
-        <div className="mt-16 bg-white rounded-3xl shadow-2xl p-8 border border-orange-100">
+        <div className="mt-16 bg-white rounded-3xl shadow-2xl p-8 border border-green-100">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Find Us</h2>
           <div className="bg-gray-200 rounded-2xl h-64 flex items-center justify-center">
             <div className="text-center text-gray-500">

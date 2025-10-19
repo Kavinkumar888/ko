@@ -143,8 +143,7 @@ const Footer = ({ setCurrentPage }) => {
               <div className="flex items-start">
                 <i className="fas fa-envelope text-emerald-500 mt-1 mr-3"></i>
                 <div className="text-gray-300">
-                  <div>info@kokappifoods.com</div>
-                  <div>order@kokappifoods.com</div>
+                  <div>Kokaapikokappi@gmail.com</div>
                 </div>
               </div>
               <div className="flex items-start">

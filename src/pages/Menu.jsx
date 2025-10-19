@@ -1,76 +1,93 @@
 import React, { useState } from 'react'
+import tea from '../images/tea.png'
+import masala from '../images/masalatea.png'
+import milk from '../images/milk.png'
+import nattusakarai from '../images/nattuchakaratea.png'
+import coffee from '../images/coffe.png'
+import black from '../images/blackcoffe.png'
+import  padam from '../images/padamMilk.png'
+import suku from '../images/sukkucoffe.png'
+import boost from '../images/Boost.png'
 
-const Menu = () => {
+const Menu = ({ addToCart }) => {
   const [activeCategory, setActiveCategory] = useState('all')
 
   const menuItems = [
     {
       id: 1,
-      name: 'Chicken Biryani',
-      price: 250,
+      name: 'milk',
+      price: 12,
       category: 'main-course',
-      image: '/images/biryani.jpg',
-      description: 'Flavorful rice with tender chicken pieces',
+      image: milk,
+      description: 'Fresh milk has a mild, slightly sweet taste and a smooth, creamy texture.',
       popular: true
     },
     {
       id: 2,
-      name: 'Masala Dosa',
-      price: 120,
-      category: 'breakfast',
-      image: '/images/dosa.jpg',
+      name: 'Masala tea',
+      price: 20,
+      category: 'main-course',
+      image: masala,
       description: 'Crispy crepe with spiced potato filling',
       popular: true
     },
     {
       id: 3,
-      name: 'Kerala Parotta',
-      price: 80,
+      name: 'tea',
+      price: 12,
       category: 'main-course',
-      image: '/images/parotta.jpg',
+      image: tea,
       description: 'Layered flatbread from Kerala',
       trending: true
     },
     {
       id: 4,
-      name: 'Chicken 65',
-      price: 180,
-      category: 'starter',
-      image: '/images/chicken65.jpg',
+      name: 'Nattuchakarai tea',
+      price: 12,
+      category: 'main-course',
+      image: nattusakarai,
       description: 'Spicy deep-fried chicken'
     },
     {
       id: 5,
       name: 'Filter Coffee',
-      price: 50,
-      category: 'beverages',
-      image: '/images/coffee.jpg',
+      price: 12,
+      category: 'main-course',
+      image: coffee,
       description: 'Traditional South Indian filter coffee',
       popular: true
     },
     {
       id: 6,
-      name: 'Gulab Jamun',
-      price: 60,
-      category: 'dessert',
-      image: '/images/gulabjamun.jpg',
+      name: 'Black Coffee',
+      price: 12,
+      category: 'main-course',
+      image: black,
       description: 'Sweet milk balls in sugar syrup'
     },
     {
       id: 7,
-      name: 'Prawn Curry',
-      price: 320,
+      name: 'Padam Milk',
+      price: 20,
       category: 'main-course',
-      image: '/images/prawn-curry.jpg',
+      image: padam,
       description: 'Fresh prawns in coconut gravy',
       new: true
     },
     {
       id: 8,
-      name: 'Idli Sambar',
-      price: 70,
-      category: 'breakfast',
-      image: '/images/idli.jpg',
+      name: 'Sukku Coffee',
+      price: 15,
+      category: 'main-course',
+      image: suku,
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 9,
+      name: 'Boost',
+      price: 15,
+      category: 'main-course',
+      image: boost,
       description: 'Soft rice cakes with lentil soup'
     }
   ]
@@ -88,18 +105,38 @@ const Menu = () => {
     ? menuItems 
     : menuItems.filter(item => item.category === activeCategory)
 
+  // Add to cart handler with success feedback
+  const handleAddToCart = (item) => {
+    addToCart(item);
+    
+    // Optional: Show a success message (you can replace this with a toast notification)
+    const button = document.getElementById(`add-btn-${item.id}`);
+    if (button) {
+      const originalText = button.innerHTML;
+      button.innerHTML = '<i class="fas fa-check"></i><span>Added</span>';
+      button.classList.remove('bg-green-500', 'hover:bg-green-600');
+      button.classList.add('bg-emerald-600');
+      
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        button.classList.remove('bg-emerald-600');
+        button.classList.add('bg-green-500', 'hover:bg-green-600');
+      }, 1500);
+    }
+  }
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-orange-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-green-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Our <span className="text-orange-500">Delicious Menu</span>
+            Our <span className="text-green-500">Delicious Menu</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Explore our wide range of authentic South Indian dishes made with love and traditional recipes
           </p>
-          <div className="w-20 h-1 bg-orange-500 mx-auto rounded-full mt-6"></div>
+          <div className="w-20 h-1 bg-green-500 mx-auto rounded-full mt-6"></div>
         </div>
 
         {/* Category Filter */}
@@ -109,8 +146,8 @@ const Menu = () => {
               key={category.id}
               className={`flex items-center space-x-2 px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 ${
                 activeCategory === category.id 
-                  ? 'bg-orange-500 text-white shadow-lg' 
-                  : 'bg-white text-gray-700 hover:bg-orange-100 hover:text-orange-500 shadow-md'
+                  ? 'bg-green-500 text-white shadow-lg' 
+                  : 'bg-white text-gray-700 hover:bg-green-100 hover:text-green-500 shadow-md'
               }`}
               onClick={() => setActiveCategory(category.id)}
             >
@@ -123,7 +160,7 @@ const Menu = () => {
         {/* Menu Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {filteredItems.map(item => (
-            <div key={item.id} className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 border border-orange-100 overflow-hidden group">
+            <div key={item.id} className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 border border-green-100 overflow-hidden group">
               {/* Image Container */}
               <div className="relative overflow-hidden">
                 <img 
@@ -145,22 +182,19 @@ const Menu = () => {
                     </span>
                   )}
                   {item.new && (
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                    <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                       🆕 New
                     </span>
                   )}
                 </div>
 
-                {/* Quick Add Button */}
-                <button className="absolute top-3 right-3 bg-white hover:bg-orange-500 text-orange-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-110">
-                  <i className="fas fa-heart"></i>
-                </button>
+                {/* REMOVED: Quick Add Button (White circle with heart) */}
               </div>
 
               {/* Item Info */}
               <div className="p-6">
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-xl font-bold text-gray-800 group-hover:text-orange-500 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-gray-800 group-hover:text-green-500 transition-colors duration-300">
                     {item.name}
                   </h3>
                   <div className="flex items-center space-x-1 text-amber-400">
@@ -174,10 +208,14 @@ const Menu = () => {
                 </p>
 
                 <div className="flex justify-between items-center">
-                  <div className="text-2xl font-bold text-orange-500">
+                  <div className="text-2xl font-bold text-green-500">
                     ₹{item.price}
                   </div>
-                  <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2 group/btn">
+                  <button 
+                    id={`add-btn-${item.id}`}
+                    onClick={() => handleAddToCart(item)}
+                    className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2 group/btn"
+                  >
                     <i className="fas fa-plus group-hover/btn:rotate-90 transition-transform duration-300"></i>
                     <span>Add</span>
                   </button>
@@ -190,14 +228,14 @@ const Menu = () => {
         {/* Empty State */}
         {filteredItems.length === 0 && (
           <div className="text-center py-16">
-            <div className="w-32 h-32 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fas fa-utensils text-5xl text-orange-500"></i>
+            <div className="w-32 h-32 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i className="fas fa-utensils text-5xl text-green-500"></i>
             </div>
             <h3 className="text-2xl font-bold text-gray-800 mb-4">No items found</h3>
             <p className="text-gray-600 mb-6">We're working on adding more items to this category.</p>
             <button 
               onClick={() => setActiveCategory('all')}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105"
+              className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105"
             >
               View All Items
             </button>
@@ -205,10 +243,10 @@ const Menu = () => {
         )}
 
         {/* Special Offer Banner */}
-        <div className="mt-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl p-8 text-white text-center shadow-2xl">
+        <div className="mt-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-3xl p-8 text-white text-center shadow-2xl">
           <h3 className="text-2xl font-bold mb-2">🎉 Special Offer!</h3>
           <p className="text-lg mb-4">Get 20% off on your first order above ₹500</p>
-          <p className="text-orange-100">Use code: WELCOME20</p>
+          <p className="text-green-100">Use code: WELCOME20</p>
         </div>
       </div>
     </div>
