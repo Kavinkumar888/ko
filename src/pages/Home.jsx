@@ -8,7 +8,7 @@ const Home = ({ setCurrentPage }) => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Welcome to <span className="text-[#25D366]">Kokappi Foods</span>
+              Welcome to <span className="text-[#25D366]">Kokaapi Foods</span>
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-600 font-light">
               Experience the authentic taste of traditional South Indian cuisine

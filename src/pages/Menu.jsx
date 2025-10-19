@@ -1,13 +1,4 @@
 import React, { useState } from 'react'
-import tea from '../images/tea.png'
-import masala from '../images/masalatea.png'
-import milk from '../images/milk.png'
-import nattusakarai from '../images/nattuchakaratea.png'
-import coffee from '../images/coffe.png'
-import black from '../images/blackcoffe.png'
-import  padam from '../images/padamMilk.png'
-import suku from '../images/sukkucoffe.png'
-import boost from '../images/Boost.png'
 
 const Menu = ({ addToCart }) => {
   const [activeCategory, setActiveCategory] = useState('all')
@@ -18,7 +9,7 @@ const Menu = ({ addToCart }) => {
       name: 'milk',
       price: 12,
       category: 'main-course',
-      image: milk,
+      image:'./milk.png',
       description: 'Fresh milk has a mild, slightly sweet taste and a smooth, creamy texture.',
       popular: true
     },
@@ -27,7 +18,7 @@ const Menu = ({ addToCart }) => {
       name: 'Masala tea',
       price: 20,
       category: 'main-course',
-      image: masala,
+      image: './masalatea.png',
       description: 'Crispy crepe with spiced potato filling',
       popular: true
     },
@@ -36,7 +27,7 @@ const Menu = ({ addToCart }) => {
       name: 'tea',
       price: 12,
       category: 'main-course',
-      image: tea,
+      image: './tea.png',
       description: 'Layered flatbread from Kerala',
       trending: true
     },
@@ -45,7 +36,7 @@ const Menu = ({ addToCart }) => {
       name: 'Nattuchakarai tea',
       price: 12,
       category: 'main-course',
-      image: nattusakarai,
+      image: './nattuchakaratea.png',
       description: 'Spicy deep-fried chicken'
     },
     {
@@ -53,7 +44,7 @@ const Menu = ({ addToCart }) => {
       name: 'Filter Coffee',
       price: 12,
       category: 'main-course',
-      image: coffee,
+      image: './coffe.png',
       description: 'Traditional South Indian filter coffee',
       popular: true
     },
@@ -62,7 +53,7 @@ const Menu = ({ addToCart }) => {
       name: 'Black Coffee',
       price: 12,
       category: 'main-course',
-      image: black,
+      image: './blackcoffe.png',
       description: 'Sweet milk balls in sugar syrup'
     },
     {
@@ -70,7 +61,7 @@ const Menu = ({ addToCart }) => {
       name: 'Padam Milk',
       price: 20,
       category: 'main-course',
-      image: padam,
+      image: './padamMilk.png',
       description: 'Fresh prawns in coconut gravy',
       new: true
     },
@@ -79,7 +70,7 @@ const Menu = ({ addToCart }) => {
       name: 'Sukku Coffee',
       price: 15,
       category: 'main-course',
-      image: suku,
+      image: './sukkucoffe.png',
       description: 'Soft rice cakes with lentil soup'
     },
      {
@@ -87,7 +78,7 @@ const Menu = ({ addToCart }) => {
       name: 'Boost',
       price: 15,
       category: 'main-course',
-      image: boost,
+      image: './Boost.png',
       description: 'Soft rice cakes with lentil soup'
     }
   ]
