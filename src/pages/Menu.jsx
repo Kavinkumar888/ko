@@ -25,7 +25,7 @@ const Menu = ({ addToCart }) => {
     {
       id: 3,
       name: 'tea',
-      price: 12,
+      price: 10,
       category: 'main-course',
       image: './tea.png',
       description: 'Layered flatbread from Kerala',

@@ -31,8 +31,8 @@ const Navbar = ({ setCurrentPage, currentPage, cartItemsCount }) => {
               className="w-10 h-10 object-contain"
             />
             <div className="flex flex-col">
-              <span className="text-emerald-600 text-lg leading-5">KoKaapi</span>
-              <span className="text-gray-600 text-sm font-normal">Foods</span>
+              <span className="text-emerald-600 text-lg leading-5">KOKAAPi</span>
+              <span className="text-gray-600 text-sm font-normal">FOODS</span>
             </div>
           </div>
           

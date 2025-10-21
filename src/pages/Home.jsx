@@ -1,8 +1,64 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Home = ({ setCurrentPage }) => {
+  const [cart, setCart] = useState([])
+
+  // Add to cart function without alert
+  const addToCart = (item) => {
+    setCart(prevCart => {
+      const existingItem = prevCart.find(cartItem => cartItem.id === item.id)
+      if (existingItem) {
+        return prevCart.map(cartItem =>
+          cartItem.id === item.id
+            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            : cartItem
+        )
+      } else {
+        return [...prevCart, { ...item, quantity: 1 }]
+      }
+    })
+    // Notification removed - item added silently
+  }
+
+  const menuItems = [
+    {
+      id: 1,
+      name: 'Hyderabadi Chicken Biryani',
+      price: 250,
+      category: 'main-course',
+      image: '/images/biryani.jpg',
+      description: 'Authentic Hyderabadi dum biryani with tender chicken pieces, aromatic basmati rice, and a blend of traditional spices.'
+    },
+    {
+      id: 2,
+      name: 'Masala Dosa',
+      price: 120,
+      category: 'breakfast',
+      image: '/images/dosa.jpg',
+      description: 'Crispy crepe with spiced potato filling'
+    },
+    {
+      id: 3,
+      name: 'Tea',
+      price: 10,
+      category: 'beverages',
+      image: './Tea.jpg',
+      description: 'Hot and refreshing tea'
+    },
+    {
+      id: 4,
+      name: 'Chicken 65',
+      price: 180,
+      category: 'starter',
+      image: '/images/chicken65.jpg',
+      description: 'Spicy deep-fried chicken appetizer'
+    }
+  ]
+
   return (
     <div className="min-h-screen bg-emerald-50">
+      {/* Navigation Bar removed */}
+
       {/* Hero Section */}
       <section className="relative bg-[#f5f5f5] text-gray-900 py-20 lg:py-32">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +67,7 @@ const Home = ({ setCurrentPage }) => {
               Welcome to <span className="text-[#25D366]">Kokaapi Foods</span>
             </h1>
             <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-600 font-light">
-              Experience the authentic taste of traditional South Indian cuisine
+              A GOOD DAY BEGINS WITH COFFEE
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button 
@@ -86,7 +142,10 @@ const Home = ({ setCurrentPage }) => {
                 </div>
 
                 <div className="flex gap-4">
-                  <button className="flex-1 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-3">
+                  <button 
+                    onClick={() => addToCart(menuItems[0])}
+                    className="flex-1 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-3"
+                  >
                     <span>🛒</span>
                     Add to Cart
                   </button>
@@ -115,7 +174,7 @@ const Home = ({ setCurrentPage }) => {
 
           {/* Additional Featured Items Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            {/* Item 1 */}
+            {/* Item 1 - Masala Dosa */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border border-gray-200">
               <div className="relative h-48">
                 <img 
@@ -132,19 +191,22 @@ const Home = ({ setCurrentPage }) => {
                 <p className="text-gray-600 text-sm mb-4">Crispy crepe with spiced potato filling</p>
                 <div className="flex justify-between items-center">
                   <span className="text-xl font-bold text-[#25D366]">₹120</span>
-                  <button className="bg-[#25D366] hover:bg-[#20ba5a] text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                  <button 
+                    onClick={() => addToCart(menuItems[1])}
+                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  >
                     <span className="text-sm">+</span>
                   </button>
                 </div>
               </div>
             </div>
 
-            {/* Item 2 */}
+            {/* Item 2 - Tea */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border border-gray-200">
               <div className="relative h-48">
                 <img 
-                  src="/images/parotta.jpg" 
-                  alt="Kerala Parotta" 
+                  src="./Tea.jpg" 
+                  alt="Tea" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-3 left-3 bg-[#25D366] text-white px-3 py-1 rounded-full text-xs font-bold">
@@ -152,18 +214,21 @@ const Home = ({ setCurrentPage }) => {
                 </div>
               </div>
               <div className="p-6">
-                <h4 className="text-lg font-bold text-gray-800 mb-2">Kerala Parotta</h4>
-                <p className="text-gray-600 text-sm mb-4">Layered flatbread from God's own country</p>
+                <h4 className="text-lg font-bold text-gray-800 mb-2">Tea</h4>
+                <p className="text-gray-600 text-sm mb-4">Hot and refreshing tea</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-xl font-bold text-[#25D366]">₹80</span>
-                  <button className="bg-[#25D366] hover:bg-[#20ba5a] text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                  <span className="text-xl font-bold text-[#25D366]">₹10</span>
+                  <button 
+                    onClick={() => addToCart(menuItems[2])}
+                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  >
                     <span className="text-sm">+</span>
                   </button>
                 </div>
               </div>
             </div>
 
-            {/* Item 3 */}
+            {/* Item 3 - Chicken 65 */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 border border-gray-200">
               <div className="relative h-48">
                 <img 
@@ -180,7 +245,10 @@ const Home = ({ setCurrentPage }) => {
                 <p className="text-gray-600 text-sm mb-4">Spicy deep-fried chicken appetizer</p>
                 <div className="flex justify-between items-center">
                   <span className="text-xl font-bold text-[#25D366]">₹180</span>
-                  <button className="bg-[#25D366] hover:bg-[#20ba5a] text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+                  <button 
+                    onClick={() => addToCart(menuItems[3])}
+                    className="bg-[#25D366] hover:bg-[#20ba5a] text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  >
                     <span className="text-sm">+</span>
                   </button>
                 </div>

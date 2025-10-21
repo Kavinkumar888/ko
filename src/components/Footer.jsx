@@ -3,7 +3,6 @@ import React from 'react'
 const Footer = ({ setCurrentPage }) => {
   const handleFooterNavigation = (page) => {
     setCurrentPage(page)
-    // Scroll to top when navigating
     window.scrollTo(0, 0)
   }
 
@@ -16,34 +15,28 @@ const Footer = ({ setCurrentPage }) => {
           <div className="footer-section">
             <div className="flex items-center mb-4">
               <div className="text-2xl text-emerald-500 mr-3">
-                <i className="fas fa-utensils"></i>
+                <span>🍛</span>
               </div>
-              <span className="text-xl font-bold text-emerald-400">Kokappi Foods</span>
+              <span className="text-xl font-bold text-emerald-400">Kokaapi Foods</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Serving authentic South Indian cuisine with love and tradition since 2010. 
               Experience the real taste of home-made food.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="social-icon bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
-                <i className="fab fa-facebook-f"></i>
+              <a href="https://www.facebook.com/share/1BD73fDUkV/" className="bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                <img src="./facebook.png" alt="Facebook" className="w-5 h-5" />
               </a>
-              <a href="#" className="social-icon bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
-                <i className="fab fa-instagram"></i>
+              <a href="#" className="bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                <img src="./inst.png" alt="Instagram" className="w-5 h-5" />
               </a>
-              <a href="#" className="social-icon bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="social-icon bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
-                <i className="fab fa-whatsapp"></i>
-              </a>
-              <a href="#" className="social-icon bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
-                <i className="fab fa-youtube"></i>
+              <a href="#" className="bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                <img src="./youtube.png" alt="Twitter" className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links with simple arrows */}
           <div className="footer-section">
             <h3 className="text-lg font-semibold mb-6 text-emerald-400 border-b border-emerald-500 pb-2">Quick Links</h3>
             <ul className="space-y-3">
@@ -52,7 +45,7 @@ const Footer = ({ setCurrentPage }) => {
                   onClick={() => handleFooterNavigation('home')} 
                   className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300"
                 >
-                  <i className="fas fa-chevron-right text-xs mr-2 text-emerald-500"></i> Home
+                  <span className="text-xs mr-2 text-emerald-500">➤</span> Home
                 </span>
               </li>
               <li>
@@ -60,7 +53,7 @@ const Footer = ({ setCurrentPage }) => {
                   onClick={() => handleFooterNavigation('menu')} 
                   className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300"
                 >
-                  <i className="fas fa-chevron-right text-xs mr-2 text-emerald-500"></i> Menu
+                  <span className="text-xs mr-2 text-emerald-500">➤</span> Menu
                 </span>
               </li>
               <li>
@@ -68,7 +61,7 @@ const Footer = ({ setCurrentPage }) => {
                   onClick={() => handleFooterNavigation('about')} 
                   className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300"
                 >
-                  <i className="fas fa-chevron-right text-xs mr-2 text-emerald-500"></i> About Us
+                  <span className="text-xs mr-2 text-emerald-500">➤</span> About Us
                 </span>
               </li>
               <li>
@@ -76,7 +69,7 @@ const Footer = ({ setCurrentPage }) => {
                   onClick={() => handleFooterNavigation('contact')} 
                   className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300"
                 >
-                  <i className="fas fa-chevron-right text-xs mr-2 text-emerald-500"></i> Contact
+                  <span className="text-xs mr-2 text-emerald-500">➤</span> Contact
                 </span>
               </li>
               <li>
@@ -84,73 +77,73 @@ const Footer = ({ setCurrentPage }) => {
                   onClick={() => handleFooterNavigation('cart')} 
                   className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300"
                 >
-                  <i className="fas fa-chevron-right text-xs mr-2 text-emerald-500"></i> Cart
+                  <span className="text-xs mr-2 text-emerald-500">➤</span> Cart
                 </span>
               </li>
             </ul>
           </div>
 
-          {/* Popular Categories */}
+          {/* Popular Categories with emojis */}
           <div className="footer-section">
             <h3 className="text-lg font-semibold mb-6 text-emerald-400 border-b border-emerald-500 pb-2">Popular Categories</h3>
             <ul className="space-y-3">
               <li>
                 <span className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300">
-                  <i className="fas fa-utensils text-sm mr-2 text-emerald-500"></i> Biryani
+                  <span className="text-sm mr-2 text-emerald-500">🍛</span> Biryani
                 </span>
               </li>
               <li>
                 <span className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300">
-                  <i className="fas fa-bread-slice text-sm mr-2 text-emerald-500"></i> Tiffin
+                  <span className="text-sm mr-2 text-emerald-500">🥪</span> Tiffin
                 </span>
               </li>
               <li>
                 <span className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300">
-                  <i className="fas fa-drumstick-bite text-sm mr-2 text-emerald-500"></i> Chicken
+                  <span className="text-sm mr-2 text-emerald-500">🍗</span> Chicken
                 </span>
               </li>
               <li>
                 <span className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300">
-                  <i className="fas fa-fish text-sm mr-2 text-emerald-500"></i> Seafood
+                  <span className="text-sm mr-2 text-emerald-500">🐟</span> Seafood
                 </span>
               </li>
               <li>
                 <span className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300">
-                  <i className="fas fa-ice-cream text-sm mr-2 text-emerald-500"></i> Desserts
+                  <span className="text-sm mr-2 text-emerald-500">🍦</span> Desserts
                 </span>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info with emojis */}
           <div className="footer-section">
             <h3 className="text-lg font-semibold mb-6 text-emerald-400 border-b border-emerald-500 pb-2">Contact Info</h3>
             <div className="space-y-4">
               <div className="flex items-start">
-                <i className="fas fa-map-marker-alt text-emerald-500 mt-1 mr-3"></i>
+                <span className="text-emerald-500 mt-1 mr-3">📍</span>
                 <div className="text-gray-300">
-                  <div>123 Food Street</div>
-                  <div>Chennai, Tamil Nadu - 600001</div>
+                  <div>299,Vannathikuttai,West Rajapalayam,Pethanaickanpalayam(tK),</div>
+                  <div>Valapadi,Salem, Tamil Nadu - 636115</div>
                 </div>
               </div>
               <div className="flex items-start">
-                <i className="fas fa-phone text-emerald-500 mt-1 mr-3"></i>
+                <span className="text-emerald-500 mt-1 mr-3">📞</span>
                 <div className="text-gray-300">
-                  <div>+91 98765 43210</div>
-                  <div>+91 87654 32109</div>
+                  <div>+91 80152 85690</div>
+                  <div>+91 80567 24909</div>
                 </div>
               </div>
               <div className="flex items-start">
-                <i className="fas fa-envelope text-emerald-500 mt-1 mr-3"></i>
+                <span className="text-emerald-500 mt-1 mr-3">✉️</span>
                 <div className="text-gray-300">
                   <div>Kokaapikokappi@gmail.com</div>
                 </div>
               </div>
               <div className="flex items-start">
-                <i className="fas fa-clock text-emerald-500 mt-1 mr-3"></i>
+                <span className="text-emerald-500 mt-1 mr-3">⏰</span>
                 <div className="text-gray-300">
                   <div>Monday - Sunday</div>
-                  <div>7:00 AM - 11:00 PM</div>
+                  <div>6:30 AM - 8:00 PM</div>
                 </div>
               </div>
             </div>
@@ -170,13 +163,6 @@ const Footer = ({ setCurrentPage }) => {
               <a href="#" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-300">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-300">Terms & Conditions</a>
               <a href="#" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-300">Refund Policy</a>
-            </div>
-            <div className="payment-methods flex space-x-4">
-              <i className="fab fa-cc-visa text-gray-400 hover:text-white text-xl transition-colors duration-300" title="Visa"></i>
-              <i className="fab fa-cc-mastercard text-gray-400 hover:text-white text-xl transition-colors duration-300" title="MasterCard"></i>
-              <i className="fab fa-cc-paypal text-gray-400 hover:text-white text-xl transition-colors duration-300" title="PayPal"></i>
-              <i className="fab fa-google-pay text-gray-400 hover:text-white text-xl transition-colors duration-300" title="Google Pay"></i>
-              <i className="fab fa-cc-apple-pay text-gray-400 hover:text-white text-xl transition-colors duration-300" title="Apple Pay"></i>
             </div>
           </div>
         </div>
