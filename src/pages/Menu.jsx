@@ -6,10 +6,10 @@ const Menu = ({ addToCart }) => {
   const menuItems = [
     {
       id: 1,
-      name: 'milk',
-      price: 12,
+      name: 'Tea',
+      price: 10,
       category: 'main-course',
-      image:'./milk.png',
+      image:'./tea.jpg',
       description: 'Fresh milk has a mild, slightly sweet taste and a smooth, creamy texture.',
       popular: true
     },
@@ -18,16 +18,16 @@ const Menu = ({ addToCart }) => {
       name: 'Masala tea',
       price: 20,
       category: 'main-course',
-      image: './masalatea.png',
-      description: 'Crispy crepe with spiced potato filling',
+      image: './masal.jpg',
+      description: 'A rich, spiced blend of tea and aromatic herbs that offers warmth, energy, and authentic Indian flavor in every sip.',
       popular: true
     },
     {
       id: 3,
-      name: 'tea',
+      name: 'Milk',
       price: 10,
       category: 'main-course',
-      image: './tea.png',
+      image: './milk.jpg',
       description: 'Layered flatbread from Kerala',
       trending: true
     },
@@ -36,7 +36,7 @@ const Menu = ({ addToCart }) => {
       name: 'Nattuchakarai tea',
       price: 12,
       category: 'main-course',
-      image: './nattuchakaratea.png',
+      image: './tea.jpg',
       description: 'Spicy deep-fried chicken'
     },
     {
@@ -44,7 +44,7 @@ const Menu = ({ addToCart }) => {
       name: 'Filter Coffee',
       price: 12,
       category: 'main-course',
-      image: './coffe.png',
+      image: './coffee.jpg',
       description: 'Traditional South Indian filter coffee',
       popular: true
     },
@@ -53,15 +53,15 @@ const Menu = ({ addToCart }) => {
       name: 'Black Coffee',
       price: 12,
       category: 'main-course',
-      image: './blackcoffe.png',
+      image: './black.jpg',
       description: 'Sweet milk balls in sugar syrup'
     },
     {
       id: 7,
-      name: 'Padam Milk',
+      name: 'leamon Tea',
       price: 20,
       category: 'main-course',
-      image: './padamMilk.png',
+      image: './lemon.jpg',
       description: 'Fresh prawns in coconut gravy',
       new: true
     },
@@ -70,7 +70,7 @@ const Menu = ({ addToCart }) => {
       name: 'Sukku Coffee',
       price: 15,
       category: 'main-course',
-      image: './sukkucoffe.png',
+      image: './lemon.jpg',
       description: 'Soft rice cakes with lentil soup'
     },
      {
@@ -78,17 +78,410 @@ const Menu = ({ addToCart }) => {
       name: 'Boost',
       price: 15,
       category: 'main-course',
-      image: './Boost.png',
+      image: './rose.png',
       description: 'Soft rice cakes with lentil soup'
-    }
+    },
+     {
+      id: 10,
+      name: 'Cold Coffee',
+      price: 15,
+      category: 'main-course',
+      image: './coldcoffee.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
+    {
+      id: 11,
+      name: 'green Tea',
+      price: 15,
+      category: 'main-course',
+      image: './green.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
+    {
+      id: 12,
+      name: 'Rose Milk',
+      price: 15,
+      category: 'Cold-beverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 13,
+      name: 'badam Milk',
+      price: 25,
+      category: 'Cold-beverages',
+      image: './padam.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 14,
+      name: 'pista Milk',
+      price: 15,
+      category: 'Cold-beverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 15,
+      name: 'lemon soda',
+      price: 15,
+      category: 'Cold-beverages',
+      image: './lemonsoda.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 16,
+      name: 'lemon juice',
+      price: 15,
+      category: 'Cold-beverages',
+      image: './lemonjuice.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 17,
+      name: 'thatuvada set',
+      price: 20,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 18,
+      name: 'Norukkal',
+      price: 25,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 19,
+      name: 'Tomato set',
+      price: 25,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 20,
+      name: 'onion set',
+      price: 30,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+       {
+      id: 21,
+      name: 'Garlic set',
+      price: 30,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 22,
+      name: 'Egg set',
+      price: 30,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 23,
+      name: 'Muruku set',
+      price: 20,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 24,
+      name: 'Bule Curacao',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 25,
+      name: 'Strawberry',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 26,
+      name: 'Lime & Mint',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 27,
+      name: 'Ginger & Lime',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 28,
+      name: 'Green Apple',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 29,
+      name: 'Chocolate',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 30,
+      name: 'Pineapple',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 31,
+      name: 'Mango',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 32,
+      name: 'Orange',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 33,
+      name: 'Kiwi',
+      price: 50,
+      category: 'berverages',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 34,
+      name: 'Bread Bajji',
+      price: 25,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 35,
+      name: 'Panipuri',
+      price: 30,
+      category: 'Snakes',
+      image: './panipuri.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 36,
+      name: 'Onion Bajji',
+      price: 20,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 37,
+      name: 'Tomato Bajji',
+      price: 20,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 38,
+      name: 'Egg Bajji',
+      price: 20,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 39,
+      name: 'Bread Omblet',
+      price: 40,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 40,
+      name: 'French Fries',
+      price: 50,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 41,
+      name: 'peri Peri French Fires',
+      price: 50,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 42,
+      name: 'Sweet Corn',
+      price: 10,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 43,
+      name: 'Channa Sundal',
+      price: 10,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 44,
+      name: 'Pasta',
+      price: 20,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 45,
+      name: 'Classic Maggie',
+      price: 30,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 46,
+      name: 'Egg Maggie',
+      price: 40,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 47,
+      name: 'Cheese Maggie',
+      price: 45,
+      category: 'Snakes',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 48,
+      name: 'Veg Sandwich',
+      price: 50,
+      category: 'sandwichs',
+      image: './san.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 49,
+      name: 'Egg Sandwich',
+      price: 50,
+      category: 'sandwichs',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 50,
+      name: 'Veg Cheese Sandwich',
+      price: 60,
+      category: 'sandwichs',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 51,
+      name: 'Egg Cheese Sandwich',
+      price: 80,
+      category: 'sandwichs',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 52,
+      name: 'Corn Sandwich',
+      price: 70,
+      category: 'sandwichs',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 53,
+      name: 'Norkkul Sandwich',
+      price: 50,
+      category: 'sandwichs',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 54,
+      name: 'Norkkul Cheese',
+      price: 60,
+      category: 'sandwichs',
+      image: './norukkal.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 55,
+      name: 'Omlette Sandwich',
+      price: 70,
+      category: 'sandwichs',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+     {
+      id: 56,
+      name: 'Peri Peri Sandwich',
+      price: 60,
+      category: 'sandwichs',
+      image: './rose.png',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 57,
+      name: 'Peri Peri Sandwich',
+      price: 60,
+      category: 'dessert',
+      image: './icecream.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
+      {
+      id: 58,
+      name: 'icecream',
+      price: 60,
+      category: 'sandwichs',
+      image: './icecreams.jpg',
+      description: 'Soft rice cakes with lentil soup'
+    },
   ]
 
   const categories = [
     { id: 'all', name: 'All Items', icon: '🍽️' },
     { id: 'main-course', name: 'Main Course', icon: '🍛' },
-    { id: 'breakfast', name: 'Breakfast', icon: '🥞' },
-    { id: 'starter', name: 'Starters', icon: '🍤' },
-    { id: 'beverages', name: 'Beverages', icon: '☕' },
+    { id: 'Snakes', name: 'Breakfast', icon: '🥞' },
+    { id: 'sandwichs', name: 'Starters', icon: '🍤' },
+    { id: 'Cold-beverages', name: 'Cold-Beverages', icon: '☕' },
+    { id: 'berverages', name: 'Beverages', icon: '☕' },
     { id: 'dessert', name: 'Desserts', icon: '🍮' }
   ]
 

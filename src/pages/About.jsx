@@ -23,10 +23,10 @@ const About = () => {
                 <h2 className="text-2xl font-bold text-gray-800">Our Story</h2>
               </div>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Welcome to Ennakku Foods, where tradition meets taste! Established in 2010, 
-                we have been serving authentic South Indian cuisine with a modern twist. 
-                Our recipes have been passed down through generations, ensuring that every 
-                dish tells a story of rich cultural heritage.
+                Welcome to Kokaapi Snacks – your go-to destination for authentic South Indian traditional snacks! 
+                Founded in 2025, we started with a simple goal: to bring back the nostalgic flavors of homemade snacks 
+                made with love, purity, and tradition. Every item we prepare reflects the taste of our roots and 
+                the joy of sharing crunchy goodness with everyone.
               </p>
             </div>
 
@@ -37,9 +37,9 @@ const About = () => {
                 <h2 className="text-2xl font-bold text-gray-800">Our Mission</h2>
               </div>
               <p className="text-gray-600 leading-relaxed text-lg">
-                To provide delicious, hygienic, and affordable food that brings people together. 
-                We believe in using only the freshest ingredients and traditional cooking methods 
-                to deliver an unforgettable dining experience.
+              To offer high-quality, hygienic, and affordable snacks that remind people of 
+                traditional homemade flavors. We focus on using premium ingredients, time-tested 
+                recipes, and modern packaging to ensure freshness in every bite.
               </p>
             </div>
 
@@ -88,7 +88,7 @@ const About = () => {
           <div className="relative">
             <div className="bg-white rounded-2xl p-6 shadow-2xl transform hover:scale-105 transition-all duration-500">
               <img 
-                src="/images/shop.jpg" 
+                src="./kokaapi.jpg" 
                 alt="Our Restaurant" 
                 className="w-full h-96 object-cover rounded-xl shadow-md"
               />

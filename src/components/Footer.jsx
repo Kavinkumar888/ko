@@ -25,13 +25,13 @@ const Footer = ({ setCurrentPage }) => {
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/share/1BD73fDUkV/" className="bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
-                <img src="./facebook.png" alt="Facebook" className="w-5 h-5" />
+                <img src="/facebook.png" alt="Facebook" className="w-5 h-5" />
               </a>
               <a href="#" className="bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
-                <img src="./inst.png" alt="Instagram" className="w-5 h-5" />
+                <img src="/inst.png" alt="Instagram" className="w-5 h-5" />
               </a>
               <a href="#" className="bg-gray-800 hover:bg-emerald-500 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
-                <img src="./youtube.png" alt="Twitter" className="w-5 h-5" />
+                <img src="/youtube.png" alt="YouTube" className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -89,22 +89,17 @@ const Footer = ({ setCurrentPage }) => {
             <ul className="space-y-3">
               <li>
                 <span className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300">
-                  <span className="text-sm mr-2 text-emerald-500">🍛</span> Biryani
+                  <span className="text-sm mr-2 text-emerald-500">🍛</span> Sandwishs
                 </span>
               </li>
               <li>
                 <span className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300">
-                  <span className="text-sm mr-2 text-emerald-500">🥪</span> Tiffin
+                  <span className="text-sm mr-2 text-emerald-500">🥪</span> panipuri
                 </span>
               </li>
               <li>
                 <span className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300">
-                  <span className="text-sm mr-2 text-emerald-500">🍗</span> Chicken
-                </span>
-              </li>
-              <li>
-                <span className="flex items-center text-gray-300 hover:text-emerald-400 cursor-pointer transition-colors duration-300">
-                  <span className="text-sm mr-2 text-emerald-500">🐟</span> Seafood
+                  <span className="text-sm mr-2 text-emerald-500">🥤</span> juices
                 </span>
               </li>
               <li>
