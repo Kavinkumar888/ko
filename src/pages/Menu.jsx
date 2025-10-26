@@ -114,14 +114,6 @@ const Menu = ({ addToCart }) => {
       description: 'Soft rice cakes with lentil soup'
     },
      {
-      id: 14,
-      name: 'pista Milk',
-      price: 15,
-      category: 'Cold-beverages',
-      image: './rose.png',
-      description: 'Soft rice cakes with lentil soup'
-    },
-     {
       id: 15,
       name: 'lemon soda',
       price: 15,
