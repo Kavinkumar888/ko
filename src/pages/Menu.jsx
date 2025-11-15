@@ -134,7 +134,7 @@ const Menu = ({ addToCart }) => {
       name: 'thatuvada set',
       price: 20,
       category: 'Snakes',
-      image: './rose.png',
+      image: './thatuvada.jpg',
       description: 'Soft rice cakes with lentil soup'
     },
      {
@@ -142,7 +142,7 @@ const Menu = ({ addToCart }) => {
       name: 'Norukkal',
       price: 25,
       category: 'Snakes',
-      image: './rose.png',
+      image: './norukkal.jpg',
       description: 'Soft rice cakes with lentil soup'
     },
       {
@@ -246,7 +246,7 @@ const Menu = ({ addToCart }) => {
       name: 'Mango',
       price: 50,
       category: 'berverages',
-      image: './rose.png',
+      image: './mango.jpg',
       description: 'Soft rice cakes with lentil soup'
     },
       {
@@ -310,7 +310,7 @@ const Menu = ({ addToCart }) => {
       name: 'Bread Omblet',
       price: 40,
       category: 'Snakes',
-      image: './rose.png',
+      image: './sandwish3.jpg',
       description: 'Soft rice cakes with lentil soup'
     },
      {
@@ -318,7 +318,7 @@ const Menu = ({ addToCart }) => {
       name: 'French Fries',
       price: 50,
       category: 'Snakes',
-      image: './rose.png',
+      image: './fries.jng',
       description: 'Soft rice cakes with lentil soup'
     },
      {
@@ -326,7 +326,7 @@ const Menu = ({ addToCart }) => {
       name: 'peri Peri French Fires',
       price: 50,
       category: 'Snakes',
-      image: './rose.png',
+      image: './rose.jng',
       description: 'Soft rice cakes with lentil soup'
     },
      {
@@ -350,7 +350,7 @@ const Menu = ({ addToCart }) => {
       name: 'Pasta',
       price: 20,
       category: 'Snakes',
-      image: './rose.png',
+      image: './pasatha.jpg',
       description: 'Soft rice cakes with lentil soup'
     },
      {
@@ -390,7 +390,7 @@ const Menu = ({ addToCart }) => {
       name: 'Egg Sandwich',
       price: 50,
       category: 'sandwichs',
-      image: './rose.png',
+      image: './sandwish1.jpg',
       description: 'Soft rice cakes with lentil soup'
     },
      {
@@ -398,7 +398,7 @@ const Menu = ({ addToCart }) => {
       name: 'Veg Cheese Sandwich',
       price: 60,
       category: 'sandwichs',
-      image: './rose.png',
+      image: './sandwiah2.jpg',
       description: 'Soft rice cakes with lentil soup'
     },
      {
@@ -406,7 +406,7 @@ const Menu = ({ addToCart }) => {
       name: 'Egg Cheese Sandwich',
       price: 80,
       category: 'sandwichs',
-      image: './rose.png',
+      image: './sandwish.jpg',
       description: 'Soft rice cakes with lentil soup'
     },
      {
